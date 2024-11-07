@@ -96,7 +96,6 @@ public class ListeSimpleTest {
     @Test
     public void supprimePremierEnPositionQuelconque() {
         listeATester.ajout(1);
-        listeATester.ajout(null);
         listeATester.ajout(2);
         listeATester.ajout(3);
         listeATester.ajout(4);
@@ -228,6 +227,9 @@ public class ListeSimpleTest {
         assertEquals(listeATester.toString(), "ListeSimple(Noeud(1), Noeud(2), Noeud(3), Noeud(4), Noeud(5))");
         listeATester.echanger(r1, r2);
         assertEquals(listeATester.toString(), "ListeSimple(Noeud(1), Noeud(4), Noeud(3), Noeud(2), Noeud(5))");
+        listeATester.supprimePremier(1);
+        listeATester.echanger(r1,r2);
+        assertEquals(listeATester.toString(), "ListeSimple(Noeud(2), Noeud(3), Noeud(4), Noeud(5))");
     }
 
     @Test
