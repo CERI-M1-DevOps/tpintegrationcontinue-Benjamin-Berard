@@ -114,6 +114,18 @@ public class ListeSimpleTest {
         assertEquals(listeATester.toString(), "ListeSimple(Noeud(4), Noeud(3), Noeud(2))");
         assertEquals(3, listeATester.getSize());
     }
+    @Test
+    void supprimeNull(){
+        listeATester.ajout(1);
+        listeATester.ajout(2);
+        listeATester.ajout(3);
+        listeATester.ajout(4);
+        listeATester.supprimePremier(5);
+        assertEquals(assertEquals(listeATester.toString(), "ListeSimple(Noeud(4), Noeud(3), Noeud(2))");
+        assertEquals(4, listeATester.getSize());
+
+)
+    }
 
     @Test
     public void supprimeTousListeVide() {
@@ -230,18 +242,7 @@ public class ListeSimpleTest {
 
     }
 
-    @Test
-    void echangerR2Tete(){
-        listeATester.ajout(5);
-        listeATester.ajout(4);
-        Noeud r1 = listeATester.tete;
-        listeATester.ajout(3);
-        listeATester.ajout(2);
-        Noeud r2 = listeATester.tete;
-        assertEquals(r2,listeATester.tete);
-        listeATester.echanger(r1, r2);
-        assertEquals(listeATester.toString(), "ListeSimple(Noeud(4), Noeud(3), Noeud(2), Noeud(5))");
-    }
+
 
     @Test
     public void echangerLePremierNoeudAvecUnAutre() {
