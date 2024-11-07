@@ -234,7 +234,7 @@ class ListeSimpleTest {
         listeATester.ajout(2);
         listeATester.ajout(3);
         listeATester.inverser();
-        assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3))", listeATester.toString();
+        assertEquals("ListeSimple(Noeud(1), Noeud(2), Noeud(3))", listeATester.toString());
     }
 
     @Test
